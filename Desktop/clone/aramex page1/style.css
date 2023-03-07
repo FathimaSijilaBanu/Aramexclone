@@ -154,19 +154,22 @@ body
     border: none;
     background-color: #DF2E38;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 32px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 12px;
+    width: 50%;
   }
   .secbutton1
   {
-    margin-top: px;
+
+    width: 50%;
   }
   .secbutton2{
-    margin-top: 86px;
+    margin-top: 30px;
+    margin-left: 76px;
   }
   .secbutton3{
     margin-top: 73px;
@@ -203,9 +206,9 @@ box-sizing: border-box;
 .input1
 {
     position: absolute;
-    top: 20rem;
+    top: 26rem;
     left: 37rem;
-    width: 30%;
+    width: 200px;
     padding: 32px;
     border-radius: 12px;
     border: none;
@@ -253,25 +256,48 @@ box-sizing: border-box;
 
 .middlediv{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap;*/
+    justify-content: space-evenly;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: row;
 }
 .subdiv1
 {
-flex:30%;
-height: 300px;
+display: inline-block;
+justify-content: space-around;
+align-items: center;
+height: 450px;
 text-align: center;
 background-color: white;
 }
 .subdiv2
 {
-    flex: 30%;
+    /* flex: 30%; */
+    /* display: inline-block; */
+/* justify-content: space-around;
+align-items: center;*/
+/* height: 300px;  */
+/* padding: 20px ; */
+display: inline-block;
+width: 30%;
+padding-left: 19px;
+padding-right: 18px;
 background-color: white;
 }
 .subdiv3
 {
-    flex: 30%;
-background-color: white;
+    /* display: inline-block;
+    justify-content: space-around;
+    align-items: center; */
+    width: 30%;
+    height: 450px;
+    text-align: center;
+    background-color: white;
+    margin-right: 30px;
+    padding-left: 18px;
+    padding-right: 25px;
+    margin-right: 0;
 }
 .map
 {
@@ -283,7 +309,7 @@ width: 90%;
     padding: 18px;
     display: flex;
     justify-content: space-between;
-    margin-left: 25px;
+    /* margin-left: 85px; */
 }
 .span
 {
@@ -295,14 +321,17 @@ width: 90%;
     position: absolute;
     fill: #DF2E38;
     height: 25px;
-    margin-top: 15px;
-    margin-left: 2px;
+    margin-top: 19px;
+    margin-left: -220px; 
+    /* margin-right: -40px; */
+   /* position: fixed; */
 }
 .subdiv3 .svg2,.svg3{
     position: absolute;
     height: 25px;
-    margin-top: 15px;
-    margin-left: 2px;
+    margin-top: 19px;
+    margin-left: -220px;
+    /* position: fixed; */
 }
 .subdiv2 form{
     margin-top: 20px;
@@ -616,4 +645,22 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+
+@media screen and (max-width:786x){
+   
+ .subdiv1
+    {
+    height: 550px;
+    width: 100%;
+    flex-wrap: wrap;
+    }
+    .subdiv2
+{
+   
+flex-wrap: wrap;
+padding-left: 19px;
+padding-right: 18px;
+background-color: white;
+}
 }
